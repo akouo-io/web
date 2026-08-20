@@ -2,7 +2,7 @@ import { Badge, Button, Text } from "@akouo/ui";
 
 export function Hero() {
   return (
-    <section className="relative isolate flex min-h-screen flex-col items-center justify-center overflow-hidden bg-background px-6 text-center">
+    <section className="relative isolate flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center overflow-hidden bg-background px-6 py-24 text-center">
       {/* Soft token-colored glow behind the headline. */}
       <div
         aria-hidden="true"
@@ -31,8 +31,8 @@ export function Hero() {
         size="lg"
         className="mt-6 max-w-2xl text-pretty leading-8"
       >
-        Akouo turns your recordings into clean, speaker-labelled transcripts —
-        searchable, shareable, and ready in minutes.
+        Record meetings or upload audio — Akouo turns them into clean,
+        speaker-labelled transcripts you can search, share, and revisit.
       </Text>
 
       <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
