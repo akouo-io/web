@@ -1,11 +1,9 @@
-import { UI_PACKAGE } from "@akouo/ui";
+import { Hero } from "./Hero";
 
 export default function App() {
   return (
-    <main className="grid min-h-screen place-items-center bg-background text-foreground">
-      <h1 className="text-2xl font-semibold text-primary">
-        Akouo website — {UI_PACKAGE} wired.
-      </h1>
+    <main className="min-h-screen bg-background text-foreground">
+      <Hero />
     </main>
   );
 }
