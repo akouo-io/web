@@ -272,3 +272,66 @@ export type { ListProps, ListItemProps } from "./List";
 
 export { Stat } from "./Stat";
 export type { StatProps } from "./Stat";
+
+// Akouo domain
+export type { Speaker } from "./lib/speaker";
+export { SPEAKERS, speakerName } from "./lib/speaker";
+
+export { Timecode, formatTimecode } from "./Timecode";
+export type { TimecodeProps } from "./Timecode";
+
+export { SpeakerTag } from "./SpeakerTag";
+export type { SpeakerTagProps } from "./SpeakerTag";
+
+export { SpeakerLegend } from "./SpeakerLegend";
+export type { SpeakerLegendProps, SpeakerLegendEntry } from "./SpeakerLegend";
+
+export { SpeakerPicker } from "./SpeakerPicker";
+export type { SpeakerPickerProps } from "./SpeakerPicker";
+
+export { Waveform } from "./Waveform";
+export type { WaveformProps } from "./Waveform";
+
+export { TranscriptView } from "./TranscriptView";
+export type {
+  TranscriptViewProps,
+  TranscriptSegment,
+} from "./TranscriptView";
+
+export { TransportControls } from "./TransportControls";
+export type { TransportControlsProps } from "./TransportControls";
+
+export { AudioPlayer } from "./AudioPlayer";
+export type { AudioPlayerProps } from "./AudioPlayer";
+
+export { LiveCaption } from "./LiveCaption";
+export type { LiveCaptionProps } from "./LiveCaption";
+
+export { DiarizationTimeline } from "./DiarizationTimeline";
+export type {
+  DiarizationTimelineProps,
+  DiarizationSegment,
+} from "./DiarizationTimeline";
+
+// Theming
+export { ThemeProvider, useTheme } from "./ThemeProvider";
+export type { ThemeProviderProps, Theme, ResolvedTheme } from "./ThemeProvider";
+
+export { ThemeToggle } from "./ThemeToggle";
+export type { ThemeToggleProps } from "./ThemeToggle";
+
+// Grouped form controls
+export { RadioGroup, RadioGroupItem } from "./RadioGroup";
+export type { RadioGroupProps, RadioGroupItemProps } from "./RadioGroup";
+
+export { CheckboxGroup, CheckboxGroupItem } from "./CheckboxGroup";
+export type {
+  CheckboxGroupProps,
+  CheckboxGroupItemProps,
+} from "./CheckboxGroup";
+
+export { DataTable } from "./DataTable";
+export type { DataTableProps, DataTableColumn } from "./DataTable";
+
+export { ResizablePanels } from "./ResizablePanels";
+export type { ResizablePanelsProps } from "./ResizablePanels";
