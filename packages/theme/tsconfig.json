@@ -1,0 +1,4 @@
+{
+  "extends": "@akouo/tsconfig/base.json",
+  "include": ["index.ts", "preset.ts"]
+}
