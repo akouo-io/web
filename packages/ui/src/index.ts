@@ -306,3 +306,32 @@ export type { AudioPlayerProps } from "./AudioPlayer";
 
 export { LiveCaption } from "./LiveCaption";
 export type { LiveCaptionProps } from "./LiveCaption";
+
+export { DiarizationTimeline } from "./DiarizationTimeline";
+export type {
+  DiarizationTimelineProps,
+  DiarizationSegment,
+} from "./DiarizationTimeline";
+
+// Theming
+export { ThemeProvider, useTheme } from "./ThemeProvider";
+export type { ThemeProviderProps, Theme, ResolvedTheme } from "./ThemeProvider";
+
+export { ThemeToggle } from "./ThemeToggle";
+export type { ThemeToggleProps } from "./ThemeToggle";
+
+// Grouped form controls
+export { RadioGroup, RadioGroupItem } from "./RadioGroup";
+export type { RadioGroupProps, RadioGroupItemProps } from "./RadioGroup";
+
+export { CheckboxGroup, CheckboxGroupItem } from "./CheckboxGroup";
+export type {
+  CheckboxGroupProps,
+  CheckboxGroupItemProps,
+} from "./CheckboxGroup";
+
+export { DataTable } from "./DataTable";
+export type { DataTableProps, DataTableColumn } from "./DataTable";
+
+export { ResizablePanels } from "./ResizablePanels";
+export type { ResizablePanelsProps } from "./ResizablePanels";
