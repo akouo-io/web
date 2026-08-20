@@ -95,6 +95,23 @@ relative (`"./"`) so it works from a project subpath such as
 user/org root page. Deploy by publishing `apps/website/dist/` (e.g. an Actions
 workflow that runs the build and uploads it as the Pages artifact).
 
+## Component development (Storybook + Chromatic)
+
+`packages/ui` ships a [Storybook](https://storybook.js.org/) (`@storybook/react-vite`)
+whose canvas imports the `@akouo/theme` layer, so stories render with the real
+tokens and a light/dark toolbar toggle.
+
+```bash
+pnpm --filter @akouo/ui storybook          # dev server on :6006
+pnpm --filter @akouo/ui build-storybook    # static build (storybook-static/)
+```
+
+Visual review runs on [Chromatic](https://www.chromatic.com/). The
+[`.github/workflows/chromatic.yml`](.github/workflows/chromatic.yml) workflow
+publishes the `ui` Storybook on every push, authenticating with the
+`CHROMATIC_KEY` repository secret. Visual changes don't fail the build
+(`exitZeroOnChanges`) — accept or reject them in the Chromatic UI.
+
 ## Conventions
 
 - **TypeScript** everywhere, extending `@akouo/tsconfig` (`base.json`, or
