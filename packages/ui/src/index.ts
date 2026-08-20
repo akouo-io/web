@@ -202,3 +202,48 @@ export {
 } from "./ContextMenu";
 
 export { HoverCard, HoverCardTrigger, HoverCardContent } from "./HoverCard";
+
+// Layout & structure
+export { Container } from "./Container";
+export type { ContainerProps } from "./Container";
+
+export { Stack } from "./Stack";
+export type { StackProps } from "./Stack";
+
+export { Grid } from "./Grid";
+export type { GridProps } from "./Grid";
+
+export { Separator } from "./Separator";
+export type { SeparatorProps } from "./Separator";
+
+export { ScrollArea } from "./ScrollArea";
+export type { ScrollAreaProps } from "./ScrollArea";
+
+export { AspectRatio } from "./AspectRatio";
+export type { AspectRatioProps } from "./AspectRatio";
+
+export {
+  Collapsible,
+  CollapsibleTrigger,
+  CollapsibleContent,
+} from "./Collapsible";
+export type { CollapsibleProps } from "./Collapsible";
+
+export {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from "./Accordion";
+export type { AccordionProps } from "./Accordion";
+
+export {
+  Table,
+  TableHeader,
+  TableBody,
+  TableFooter,
+  TableRow,
+  TableHead,
+  TableCell,
+  TableCaption,
+} from "./Table";
