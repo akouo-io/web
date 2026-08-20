@@ -8,6 +8,7 @@ out/
 build/
 .next/
 .turbo/
+storybook-static/
 
 # electron
 apps/desktop/dist/
