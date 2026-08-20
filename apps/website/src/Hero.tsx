@@ -31,8 +31,8 @@ export function Hero() {
         size="lg"
         className="mt-6 max-w-2xl text-pretty leading-8"
       >
-        Akouo turns your recordings into clean, speaker-labelled transcripts —
-        searchable, shareable, and ready in minutes.
+        Record meetings or upload audio — Akouo turns them into clean,
+        speaker-labelled transcripts you can search, share, and revisit.
       </Text>
 
       <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
