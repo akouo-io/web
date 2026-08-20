@@ -2,7 +2,7 @@ import { Badge, Button, Text } from "@akouo/ui";
 
 export function Hero() {
   return (
-    <section className="relative isolate flex min-h-screen flex-col items-center justify-center overflow-hidden bg-background px-6 text-center">
+    <section className="relative isolate flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center overflow-hidden bg-background px-6 py-24 text-center">
       {/* Soft token-colored glow behind the headline. */}
       <div
         aria-hidden="true"
