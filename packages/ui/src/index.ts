@@ -6,7 +6,7 @@
  */
 export const UI_PACKAGE = "@akouo/ui" as const;
 
-export { cn } from "./cn";
+export { cn } from "./lib/cn";
 
 export { Button } from "./Button";
 export type { ButtonProps } from "./Button";
