@@ -16,8 +16,8 @@ export default [
               group: [
                 "@akouo/ui",
                 "@akouo/ui/*",
-                "@akouo/web",
-                "@akouo/web/*",
+                "@akouo/app",
+                "@akouo/app/*",
                 "@akouo/desktop",
                 "@akouo/desktop/*",
                 "@akouo/website",

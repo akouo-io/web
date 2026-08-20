@@ -7,7 +7,7 @@ A pnpm monorepo: three React apps sharing two packages.
 ```
 akouo/
 ├─ apps/
-│  ├─ web/        @akouo/web       Next.js app (authenticated knowledge work)
+│  ├─ app/        @akouo/app       Next.js app (authenticated knowledge work)
 │  ├─ desktop/    @akouo/desktop   Electron shell (electron-vite) wrapping React
 │  └─ website/    @akouo/website   Vite + React SPA — static, hostable on GH Pages
 ├─ packages/
@@ -70,7 +70,7 @@ pnpm typecheck        # tsc --noEmit across all workspaces
 ## Running each app
 
 ```bash
-pnpm dev:web          # Next.js dev server (apps/web)
+pnpm dev:app          # Next.js dev server (apps/app)
 pnpm dev:desktop      # electron-vite dev (apps/desktop)
 pnpm dev:website      # Vite dev server (apps/website)
 ```
@@ -78,13 +78,13 @@ pnpm dev:website      # Vite dev server (apps/website)
 Production builds:
 
 ```bash
-pnpm build:web
+pnpm build:app
 pnpm build:desktop
 pnpm build:website
 ```
 
 Or target any workspace directly with pnpm filters, e.g.
-`pnpm --filter @akouo/web build`.
+`pnpm --filter @akouo/app build`.
 
 ### Hosting the website on GitHub Pages
 

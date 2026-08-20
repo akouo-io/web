@@ -10,10 +10,10 @@
   "scripts": {
     "lint": "pnpm -r --parallel lint",
     "typecheck": "pnpm -r --parallel typecheck",
-    "dev:web": "pnpm --filter @akouo/web dev",
+    "dev:app": "pnpm --filter @akouo/app dev",
     "dev:desktop": "pnpm --filter @akouo/desktop dev",
     "dev:website": "pnpm --filter @akouo/website dev",
-    "build:web": "pnpm --filter @akouo/web build",
+    "build:app": "pnpm --filter @akouo/app build",
     "build:desktop": "pnpm --filter @akouo/desktop build",
     "build:website": "pnpm --filter @akouo/website build"
   },

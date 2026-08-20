@@ -14,8 +14,8 @@ export default [
           patterns: [
             {
               group: [
-                "@akouo/web",
-                "@akouo/web/*",
+                "@akouo/app",
+                "@akouo/app/*",
                 "@akouo/desktop",
                 "@akouo/desktop/*",
                 "@akouo/website",
