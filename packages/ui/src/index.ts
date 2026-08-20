@@ -247,3 +247,28 @@ export {
   TableCell,
   TableCaption,
 } from "./Table";
+
+// Data display & typography
+export { Avatar, AvatarGroup } from "./Avatar";
+export type { AvatarProps, AvatarGroupProps } from "./Avatar";
+
+export { Heading } from "./Heading";
+export type { HeadingProps } from "./Heading";
+
+export { Text } from "./Text";
+export type { TextProps } from "./Text";
+
+export { Prose } from "./Prose";
+export type { ProseProps } from "./Prose";
+
+export { Kbd } from "./Kbd";
+export type { KbdProps } from "./Kbd";
+
+export { Code, CodeBlock } from "./Code";
+export type { CodeProps, CodeBlockProps } from "./Code";
+
+export { List, ListItem } from "./List";
+export type { ListProps, ListItemProps } from "./List";
+
+export { Stat } from "./Stat";
+export type { StatProps } from "./Stat";
