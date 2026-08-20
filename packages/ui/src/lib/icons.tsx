@@ -105,3 +105,52 @@ export function MoreHorizontalIcon(props: IconProps) {
     </Icon>
   );
 }
+
+export function PlayIcon(props: IconProps) {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+      {...props}
+    >
+      <path d="M8 5v14l11-7z" />
+    </svg>
+  );
+}
+
+export function PauseIcon(props: IconProps) {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+      {...props}
+    >
+      <rect x="6" y="5" width="4" height="14" rx="1" />
+      <rect x="14" y="5" width="4" height="14" rx="1" />
+    </svg>
+  );
+}
+
+export function SkipBackIcon(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <path d="M11 19 2 12l9-7v14z" />
+      <path d="M22 19l-9-7 9-7v14z" />
+    </Icon>
+  );
+}
+
+export function SkipForwardIcon(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <path d="m13 19 9-7-9-7v14z" />
+      <path d="M2 19l9-7-9-7v14z" />
+    </Icon>
+  );
+}

@@ -272,3 +272,37 @@ export type { ListProps, ListItemProps } from "./List";
 
 export { Stat } from "./Stat";
 export type { StatProps } from "./Stat";
+
+// Akouo domain
+export type { Speaker } from "./lib/speaker";
+export { SPEAKERS, speakerName } from "./lib/speaker";
+
+export { Timecode, formatTimecode } from "./Timecode";
+export type { TimecodeProps } from "./Timecode";
+
+export { SpeakerTag } from "./SpeakerTag";
+export type { SpeakerTagProps } from "./SpeakerTag";
+
+export { SpeakerLegend } from "./SpeakerLegend";
+export type { SpeakerLegendProps, SpeakerLegendEntry } from "./SpeakerLegend";
+
+export { SpeakerPicker } from "./SpeakerPicker";
+export type { SpeakerPickerProps } from "./SpeakerPicker";
+
+export { Waveform } from "./Waveform";
+export type { WaveformProps } from "./Waveform";
+
+export { TranscriptView } from "./TranscriptView";
+export type {
+  TranscriptViewProps,
+  TranscriptSegment,
+} from "./TranscriptView";
+
+export { TransportControls } from "./TransportControls";
+export type { TransportControlsProps } from "./TransportControls";
+
+export { AudioPlayer } from "./AudioPlayer";
+export type { AudioPlayerProps } from "./AudioPlayer";
+
+export { LiveCaption } from "./LiveCaption";
+export type { LiveCaptionProps } from "./LiveCaption";
