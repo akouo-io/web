@@ -116,3 +116,43 @@ export {
   DropdownMenuLabel,
   DropdownMenuSeparator,
 } from "./DropdownMenu";
+
+export { CommandPalette } from "./CommandPalette";
+export type { CommandPaletteProps, Command } from "./CommandPalette";
+
+export {
+  Sidebar,
+  SidebarSection,
+  SidebarItem,
+  NavRail,
+  NavRailItem,
+} from "./Sidebar";
+export type {
+  SidebarItemProps,
+  NavRailItemProps,
+} from "./Sidebar";
+
+// Feedback & status
+export { Alert, AlertTitle, AlertDescription } from "./Alert";
+export type { AlertProps } from "./Alert";
+
+export { ToastProvider, useToast } from "./Toast";
+export type { ToastOptions } from "./Toast";
+
+export { Badge } from "./Badge";
+export type { BadgeProps } from "./Badge";
+
+export { Spinner } from "./Spinner";
+export type { SpinnerProps } from "./Spinner";
+
+export { ProgressBar } from "./ProgressBar";
+export type { ProgressBarProps } from "./ProgressBar";
+
+export { Skeleton } from "./Skeleton";
+export type { SkeletonProps } from "./Skeleton";
+
+export { RecordingIndicator } from "./RecordingIndicator";
+export type { RecordingIndicatorProps } from "./RecordingIndicator";
+
+export { EmptyState } from "./EmptyState";
+export type { EmptyStateProps } from "./EmptyState";
