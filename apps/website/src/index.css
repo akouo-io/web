@@ -1,6 +1,10 @@
 /* Akouo design tokens (Tailwind v4 layer) live in @akouo/theme. */
 @import "@akouo/theme/css";
 
+/* Scan the shared component library so its utility classes are generated —
+   Tailwind's auto content detection skips packages outside this app. */
+@source "../../../packages/ui/src/**/*.{ts,tsx}";
+
 /* The theme toggles dark mode on the `.dark` class, not the OS preference. */
 @custom-variant dark (&:where(.dark, .dark *));
 
