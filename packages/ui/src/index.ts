@@ -40,3 +40,30 @@ export {
   CardContent,
   CardFooter,
 } from "./Card";
+
+export { Label } from "./Label";
+export type { LabelProps } from "./Label";
+
+export { FormField } from "./FormField";
+export type { FormFieldProps, FormFieldRenderProps } from "./FormField";
+
+export { Select } from "./Select";
+export type { SelectProps } from "./Select";
+
+export { NumberInput } from "./NumberInput";
+export type { NumberInputProps } from "./NumberInput";
+
+export { InputGroup } from "./InputGroup";
+export type { InputGroupProps } from "./InputGroup";
+
+export { SearchInput } from "./SearchInput";
+export type { SearchInputProps } from "./SearchInput";
+
+export { TagInput } from "./TagInput";
+export type { TagInputProps } from "./TagInput";
+
+export { PinInput } from "./PinInput";
+export type { PinInputProps } from "./PinInput";
+
+export { FileUpload } from "./FileUpload";
+export type { FileUploadProps } from "./FileUpload";
