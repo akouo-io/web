@@ -1,7 +1,12 @@
 {
   "extends": "@akouo/tsconfig/react.json",
   "compilerOptions": {
-    "types": ["react", "react-dom"]
+    "jsx": "preserve",
+    "types": ["node", "react", "react-dom"],
+    "plugins": [{ "name": "next" }],
+    "incremental": true,
+    "allowJs": true
   },
-  "include": ["src"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules", ".next", "out"]
 }

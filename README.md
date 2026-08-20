@@ -7,9 +7,9 @@ A pnpm monorepo: three React apps sharing two packages.
 ```
 akouo/
 ├─ apps/
-│  ├─ web/        @akouo/web       Vite + React SPA (authenticated app, no SEO)
+│  ├─ web/        @akouo/web       Next.js app (authenticated knowledge work)
 │  ├─ desktop/    @akouo/desktop   Electron shell (electron-vite) wrapping React
-│  └─ website/    @akouo/website   Next.js marketing site (SSG/SEO)
+│  └─ website/    @akouo/website   Vite + React SPA — static, hostable on GH Pages
 ├─ packages/
 │  ├─ ui/         @akouo/ui        Shared React components (consumed by all apps)
 │  └─ theme/      @akouo/theme     Design tokens + Tailwind preset
@@ -48,8 +48,8 @@ its `@theme inline` block). The package exports:
 
 Because every app draws from the same tokens, **changing a token in the CSS
 re-skins all three apps** from one place. See
-[`apps/web/tailwind.config.ts`](apps/web/tailwind.config.ts) and
-[`apps/web/src/index.css`](apps/web/src/index.css) for the wiring.
+[`apps/website/tailwind.config.ts`](apps/website/tailwind.config.ts) and
+[`apps/website/src/index.css`](apps/website/src/index.css) for the wiring.
 
 Dark mode is class-based: the theme toggles on a `.dark` class, and each app's
 entry CSS declares the matching `@custom-variant dark`.
@@ -70,9 +70,9 @@ pnpm typecheck        # tsc --noEmit across all workspaces
 ## Running each app
 
 ```bash
-pnpm dev:web          # Vite dev server (apps/web)
+pnpm dev:web          # Next.js dev server (apps/web)
 pnpm dev:desktop      # electron-vite dev (apps/desktop)
-pnpm dev:website      # Next.js dev server (apps/website)
+pnpm dev:website      # Vite dev server (apps/website)
 ```
 
 Production builds:
@@ -85,6 +85,15 @@ pnpm build:website
 
 Or target any workspace directly with pnpm filters, e.g.
 `pnpm --filter @akouo/web build`.
+
+### Hosting the website on GitHub Pages
+
+`apps/website` is a static Vite SPA — `pnpm build:website` emits plain files to
+`apps/website/dist/`, which can be served by any static host. Its Vite `base` is
+relative (`"./"`) so it works from a project subpath such as
+`https://<org>.github.io/<repo>/`; set `base: "/"` for a custom domain or a
+user/org root page. Deploy by publishing `apps/website/dist/` (e.g. an Actions
+workflow that runs the build and uploads it as the Pages artifact).
 
 ## Conventions
 

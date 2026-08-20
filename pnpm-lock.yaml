@@ -81,52 +81,6 @@ importers:
       '@akouo/ui':
         specifier: workspace:*
         version: link:../../packages/ui
-      react:
-        specifier: ^19.0.0
-        version: 19.2.8
-      react-dom:
-        specifier: ^19.0.0
-        version: 19.2.8(react@19.2.8)
-    devDependencies:
-      '@akouo/eslint-config':
-        specifier: workspace:*
-        version: link:../../tooling/eslint-config
-      '@akouo/tsconfig':
-        specifier: workspace:*
-        version: link:../../tooling/tsconfig
-      '@tailwindcss/vite':
-        specifier: ^4.0.0
-        version: 4.3.3(vite@6.4.3(@types/node@22.20.1)(jiti@2.7.0)(lightningcss@1.32.0))
-      '@types/react':
-        specifier: ^19.0.0
-        version: 19.2.18
-      '@types/react-dom':
-        specifier: ^19.0.0
-        version: 19.2.4(@types/react@19.2.18)
-      '@vitejs/plugin-react':
-        specifier: ^4.3.4
-        version: 4.7.0(vite@6.4.3(@types/node@22.20.1)(jiti@2.7.0)(lightningcss@1.32.0))
-      eslint:
-        specifier: ^9.17.0
-        version: 9.39.5(jiti@2.7.0)
-      tailwindcss:
-        specifier: ^4.0.0
-        version: 4.3.3
-      typescript:
-        specifier: ^5.7.3
-        version: 5.9.3
-      vite:
-        specifier: ^6.0.7
-        version: 6.4.3(@types/node@22.20.1)(jiti@2.7.0)(lightningcss@1.32.0)
-
-  apps/website:
-    dependencies:
-      '@akouo/theme':
-        specifier: workspace:*
-        version: link:../../packages/theme
-      '@akouo/ui':
-        specifier: workspace:*
-        version: link:../../packages/ui
       next:
         specifier: ^15.1.4
         version: 15.5.23(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
@@ -164,6 +118,52 @@ importers:
       typescript:
         specifier: ^5.7.3
         version: 5.9.3
+
+  apps/website:
+    dependencies:
+      '@akouo/theme':
+        specifier: workspace:*
+        version: link:../../packages/theme
+      '@akouo/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
+      react:
+        specifier: ^19.0.0
+        version: 19.2.8
+      react-dom:
+        specifier: ^19.0.0
+        version: 19.2.8(react@19.2.8)
+    devDependencies:
+      '@akouo/eslint-config':
+        specifier: workspace:*
+        version: link:../../tooling/eslint-config
+      '@akouo/tsconfig':
+        specifier: workspace:*
+        version: link:../../tooling/tsconfig
+      '@tailwindcss/vite':
+        specifier: ^4.0.0
+        version: 4.3.3(vite@6.4.3(@types/node@22.20.1)(jiti@2.7.0)(lightningcss@1.32.0))
+      '@types/react':
+        specifier: ^19.0.0
+        version: 19.2.18
+      '@types/react-dom':
+        specifier: ^19.0.0
+        version: 19.2.4(@types/react@19.2.18)
+      '@vitejs/plugin-react':
+        specifier: ^4.3.4
+        version: 4.7.0(vite@6.4.3(@types/node@22.20.1)(jiti@2.7.0)(lightningcss@1.32.0))
+      eslint:
+        specifier: ^9.17.0
+        version: 9.39.5(jiti@2.7.0)
+      tailwindcss:
+        specifier: ^4.0.0
+        version: 4.3.3
+      typescript:
+        specifier: ^5.7.3
+        version: 5.9.3
+      vite:
+        specifier: ^6.0.7
+        version: 6.4.3(@types/node@22.20.1)(jiti@2.7.0)(lightningcss@1.32.0)
 
   packages/theme:
     devDependencies:
