@@ -156,3 +156,49 @@ export type { RecordingIndicatorProps } from "./RecordingIndicator";
 
 export { EmptyState } from "./EmptyState";
 export type { EmptyStateProps } from "./EmptyState";
+
+// Overlays
+export {
+  Dialog,
+  DialogTrigger,
+  DialogContent,
+  DialogHeader,
+  DialogFooter,
+  DialogBody,
+  DialogTitle,
+  DialogDescription,
+  DialogClose,
+} from "./Dialog";
+export type { DialogProps } from "./Dialog";
+
+export {
+  Drawer,
+  DrawerTrigger,
+  DrawerContent,
+  DrawerHeader,
+  DrawerFooter,
+  DrawerBody,
+  DrawerTitle,
+  DrawerDescription,
+  DrawerClose,
+} from "./Drawer";
+export type { DrawerProps } from "./Drawer";
+
+export { ConfirmDialog } from "./ConfirmDialog";
+export type { ConfirmDialogProps } from "./ConfirmDialog";
+
+export { Popover, PopoverTrigger, PopoverContent } from "./Popover";
+
+export { Tooltip } from "./Tooltip";
+export type { TooltipProps } from "./Tooltip";
+
+export {
+  ContextMenu,
+  ContextMenuTrigger,
+  ContextMenuContent,
+  ContextMenuItem,
+  ContextMenuLabel,
+  ContextMenuSeparator,
+} from "./ContextMenu";
+
+export { HoverCard, HoverCardTrigger, HoverCardContent } from "./HoverCard";
