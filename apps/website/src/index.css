@@ -10,3 +10,8 @@
 
 /* Extend the shared preset (darkMode + token names) for this app. */
 @config "../tailwind.config.ts";
+
+/* Anchor jumps clear the sticky header (h-16 = 4rem). */
+html {
+  scroll-padding-top: 4rem;
+}
