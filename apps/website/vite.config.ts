@@ -19,6 +19,7 @@ export default defineConfig({
       input: {
         main: resolve(dir, "index.html"),
         pricing: resolve(dir, "pricing.html"),
+        security: resolve(dir, "security.html"),
       },
     },
   },
