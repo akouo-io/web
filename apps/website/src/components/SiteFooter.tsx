@@ -1,9 +1,33 @@
 import { Logo } from "./Logo";
 
 const columns = [
-  { title: "Product", links: ["Features", "Preview", "Pricing", "Changelog"] },
-  { title: "Company", links: ["About", "Blog", "Careers", "Contact"] },
-  { title: "Legal", links: ["Privacy", "Terms", "Security"] },
+  {
+    title: "Product",
+    links: [
+      { label: "Features", href: "#features" },
+      { label: "Desktop app", href: "#desktop" },
+      { label: "Templates", href: "#templates" },
+      { label: "Export", href: "#export" },
+      { label: "Preview", href: "#preview" },
+    ],
+  },
+  {
+    title: "Company",
+    links: [
+      { label: "About", href: "#" },
+      { label: "Blog", href: "#" },
+      { label: "Careers", href: "#" },
+      { label: "Contact", href: "#" },
+    ],
+  },
+  {
+    title: "Legal",
+    links: [
+      { label: "Privacy", href: "#" },
+      { label: "Terms", href: "#" },
+      { label: "Security", href: "#" },
+    ],
+  },
 ];
 
 export function SiteFooter() {
@@ -22,13 +46,13 @@ export function SiteFooter() {
               {col.title}
             </h3>
             <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
-              {col.links.map((label) => (
-                <li key={label}>
+              {col.links.map((link) => (
+                <li key={link.label}>
                   <a
-                    href="#"
+                    href={link.href}
                     className="rounded-sm transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                   >
-                    {label}
+                    {link.label}
                   </a>
                 </li>
               ))}
