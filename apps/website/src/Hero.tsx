@@ -22,8 +22,8 @@ export function Hero() {
       </Badge>
 
       <h1 className="max-w-4xl text-balance text-5xl font-bold tracking-tight text-foreground sm:text-6xl lg:text-7xl">
-        Transcription that knows{" "}
-        <span className="text-primary">who’s speaking</span>
+        Hears every voice.{" "}
+        <span className="text-primary">Remembers every decision.</span>
       </h1>
 
       <Text
