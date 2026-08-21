@@ -95,6 +95,11 @@ relative (`"./"`) so it works from a project subpath such as
 user/org root page. Deploy by publishing `apps/website/dist/` (e.g. an Actions
 workflow that runs the build and uploads it as the Pages artifact).
 
+## Documentation
+
+- [Templates](docs/templates.md) — how a template turns a transcript into
+  structured, traceable output (summaries, action items, metrics, lists).
+
 ## Component development (Storybook + Chromatic)
 
 `packages/ui` ships a [Storybook](https://storybook.js.org/) (`@storybook/react-vite`)
