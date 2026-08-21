@@ -38,7 +38,7 @@ export function SiteFooter({ linkBase = "" }: { linkBase?: string }) {
         <div className="space-y-3">
           <Logo />
           <p className="max-w-xs text-sm text-muted-foreground">
-            Transcription that knows who is speaking.
+            Hears every voice. Remembers every decision.
           </p>
         </div>
         {columns.map((col) => (
