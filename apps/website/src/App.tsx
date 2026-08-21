@@ -8,6 +8,7 @@ import { DesktopRecording } from "./sections/DesktopRecording";
 import { Features } from "./sections/Features";
 import { HowItWorks } from "./sections/HowItWorks";
 import { Preview } from "./sections/Preview";
+import { Templates } from "./sections/Templates";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
           <Features />
           <DesktopRecording />
           <HowItWorks />
+          <Templates />
           <Preview />
           <CtaSection />
         </main>
