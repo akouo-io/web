@@ -3,7 +3,7 @@ import { useState } from "react";
 
 import { Logo } from "./Logo";
 
-const links = [
+const sectionLinks = [
   { href: "#features", label: "Features" },
   { href: "#desktop", label: "Desktop" },
   { href: "#how", label: "How it works" },
@@ -28,15 +28,26 @@ function CloseIcon() {
   );
 }
 
-export function SiteHeader() {
+/**
+ * `linkBase` prefixes the in-page section anchors so they work from another
+ * page (e.g. "index.html" from /pricing). Empty on the home page for same-page
+ * smooth scrolling.
+ */
+export function SiteHeader({ linkBase = "" }: { linkBase?: string }) {
   const [open, setOpen] = useState(false);
   const close = () => setOpen(false);
+
+  const nav = [
+    ...sectionLinks.map((l) => ({ href: `${linkBase}${l.href}`, label: l.label })),
+    { href: "pricing.html", label: "Pricing" },
+  ];
+  const logoHref = linkBase ? "index.html" : "#top";
 
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background/80 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <a
-          href="#top"
+          href={logoHref}
           onClick={close}
           className="rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
         >
@@ -44,9 +55,9 @@ export function SiteHeader() {
         </a>
 
         <nav className="hidden items-center gap-6 text-sm text-muted-foreground lg:flex">
-          {links.map((link) => (
+          {nav.map((link) => (
             <a
-              key={link.href}
+              key={link.label}
               href={link.href}
               className="rounded-sm transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             >
@@ -79,9 +90,9 @@ export function SiteHeader() {
           className="border-t border-border bg-background lg:hidden"
         >
           <nav className="mx-auto flex max-w-6xl flex-col gap-1 px-6 py-4">
-            {links.map((link) => (
+            {nav.map((link) => (
               <a
-                key={link.href}
+                key={link.label}
                 href={link.href}
                 onClick={close}
                 className="rounded-md px-2 py-2 text-sm text-muted-foreground transition-colors hover:bg-accent hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"

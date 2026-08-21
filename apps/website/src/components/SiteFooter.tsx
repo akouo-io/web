@@ -9,6 +9,7 @@ const columns = [
       { label: "Templates", href: "#templates" },
       { label: "Export", href: "#export" },
       { label: "Preview", href: "#preview" },
+      { label: "Pricing", href: "pricing.html" },
     ],
   },
   {
@@ -30,7 +31,7 @@ const columns = [
   },
 ];
 
-export function SiteFooter() {
+export function SiteFooter({ linkBase = "" }: { linkBase?: string }) {
   return (
     <footer className="border-t border-border bg-background">
       <div className="mx-auto grid max-w-6xl gap-10 px-6 py-14 sm:grid-cols-2 lg:grid-cols-4">
@@ -49,7 +50,11 @@ export function SiteFooter() {
               {col.links.map((link) => (
                 <li key={link.label}>
                   <a
-                    href={link.href}
+                    href={
+                      link.href.startsWith("#")
+                        ? `${linkBase}${link.href}`
+                        : link.href
+                    }
                     className="rounded-sm transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                   >
                     {link.label}
