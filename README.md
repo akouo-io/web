@@ -99,6 +99,8 @@ workflow that runs the build and uploads it as the Pages artifact).
 
 - [Templates](docs/templates.md) — how a template turns a transcript into
   structured, traceable output (summaries, action items, metrics, lists).
+- [Export](docs/export.md) — sending structured output to the tools where work
+  happens (Jira, Linear, GitHub, Notion).
 
 ## Component development (Storybook + Chromatic)
 
